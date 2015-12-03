@@ -1,1 +1,78 @@
 
+<html>
+
+<body>
+  <form action="send.php">
+  <table>
+    <tr>
+      <td><b>What kind of car would you like to buy?</b></td>
+    </tr>
+	
+	<tr>
+		<td>
+			&emsp; <input type="radio" name="car_type" value="proton">Proton &nbsp
+			<input type="radio" name="car_type" value="honda">Honda &nbsp
+			<input type="radio" name="car_type" value="ferrari">Ferrari &nbsp
+			<input type="radio" name="car_type" value="ford">Ford
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>What colour do you want on your car</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+			&emsp;<select name="car_colour">
+				<option value="white">White</option>
+				<option value="red">Red</option>
+				<option value="black" selected>Black</option>
+				<option value="blue">Blue</option>
+			</select>
+			Other: &nbsp<input type="text" name="car_colour">
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Enter XXXXXXXX of your preferred car</b></td>
+	</tr>
+	
+	<tr>
+		<td>&emsp;<textarea name="car_XXX" rows="3" cols="30"></textarea></td>
+	</tr>
+	
+	<tr>
+		<td><b>Tell us how to get in touch with you</b></td>
+	</tr>
+	
+	<table>
+		<tr>
+			<td>&emsp;<label for="name">Name</label></td><td>&emsp;<input type="text" name="cus_name" id="name"></td>
+		</tr>
+		
+		<tr>
+			<td>&emsp;<label for="email">E-mail</label></td><td>&emsp;<input type="email" name="cus_email" id="email"></td>
+		</tr>
+		
+		<tr>
+			<td>&emsp;<label for="tel">Tel</label></td><td>&emsp;<input type="text" name="cus_tel" id="tel"></td>
+		</tr>
+		
+		<tr>
+			<td>&emsp;<label for="fax">FAX</label></td><td>&emsp;<input type="text" name="cus_fax" id="fax"></td>
+		</tr>
+	</table>
+	
+	<tr>
+		<td>&emsp;<input type="checkbox" name="cus_contact">Please contact me as soon as possible regarding this matter.</td>
+	</tr>
+	
+  </table><br>
+	
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+  </form>
+</body>
+
+
+</html>
